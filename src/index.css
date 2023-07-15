@@ -1,0 +1,293 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.page-header {
+  display: flex;
+  margin-top: 10px;
+}
+.main-menu {
+  flex-grow: 1;
+}
+.main-menu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.main-menu-list a {
+  font-size: 30px;
+  line-height: 41px;
+  color: #2a3d8f;
+}
+.main-menu-list a:hover {
+  color: #3893cc;
+}
+.page-footer {
+  display: flex;
+  padding: 35px 0;
+  color: #000000;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hastag {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.copyright {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.social-button {
+  margin: 0px 10px;
+}
+.footer-wrapper {
+  background-color: #b5d4c5;
+}
+h2 {
+  color: #2a3d8f;
+  font-size: 36px;
+  line-height: 49px;
+}
+h3 {
+  font-size: 30px;
+  line-height: 41px;
+}
+.slogan {
+  height: 558px;
+  background-image: url(/src/assets/img/innsbruck1.png);
+  background-color: #dbe8f7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slogan h1 {
+  margin: 0;
+  padding-top: 180px;
+  font-size: 82px;
+  line-height: 82px;
+  color: #ffffff;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about-numbers-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 20px;
+}
+.about-numbers-list li::before {
+  content: "\1F5F8";
+  margin-right: 3px;
+}
+.marketing {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/src/assets/img/skier.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  width: 30%;
+}
+.marketing p {
+  margin: 0;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  line-height: 33px;
+}
+.marketing a {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 60px;
+  padding: 5px 10px;
+  background-color: #fff;
+  opacity: 0.7;
+  align-self: flex-end;
+  color: #000000;
+}
+.about-weather-graph {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+figcaption {
+  display: flex;
+  background-color: rgb(66, 90, 74);
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  color: white;
+}
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.gallery-item {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  align-items: center;
+  min-height: 256px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #b5d4c5;
+}
+.gallery-item h3 {
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+.transfer td,
+th {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+  width: 25%;
+}
+.transfer {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.transfer thead {
+  background-color: rgb(32, 46, 92);
+  color: #fff;
+}
+.transfer span {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .main-menu0list a {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .slogan h1 {
+    font-size: 40px;
+  }
+  .gallery-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-item img {
+    width: 100%;
+  }
+  .gallery-item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  /* .gallery-item:nth-child(2) img{
+      order:1;
+  } */
+}
+@media (max-width: 470px) {
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-header img {
+    width: 55px;
+    margin-bottom: 5px;
+  }
+  .main-menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-menu-list li {
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+  }
+  .main-menu {
+    width: 100%;
+  }
+  .main-menu-list a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 18px;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .marketing {
+    width: 100%;
+  }
+  .transfer span {
+    display: block;
+    background-color: rgba(0, 38, 163, 0.336);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    text-transform: uppercase;
+    color: dimgray;
+    font-size: 10px;
+    font-size: bold;
+  }
+  .transfer thead {
+    display: none;
+  }
+  .transfer tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .transfer td {
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 35px;
+  }
+  .page-footer {
+    flex-direction: column;
+  }
+  .footer-social {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
